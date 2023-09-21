@@ -21,10 +21,10 @@ public class BookstoreApplication {
 	public CommandLineRunner bookDemo(BookRepository BookRepository) {
 		return (args) -> {
 
-			BookRepository.save(new Book("A Farewell to Arms", "Ernest Hemingway", "1232323-21", 1929, 30.00));
-			BookRepository.save(new Book("Animal Farm", "George Orwell", "2212343-5", 1945, 20.00));
-			
-
+			BookRepository.save(new Book("1232323-21", "A Farewell to Arms", "Ernest Hemingway", 1929, 30.00));
+			BookRepository.save(new Book("2212343-5", "Animal Farm", "George Orwell", 1945, 20.00));
+			BookRepository.save(new Book("10-5050000149", "Crime and Punishment", "Fyodor Dostoevsky", 1866, 40.00));
+			BookRepository.save(new Book("9780061177576", "Post Office", "Charles Bukowski", 1971, 10.00));
 			
 
 		};
