@@ -26,7 +26,7 @@ public class BookstoreController {
 
 		model.addAttribute("Books", Books);
 		
-		return "index";
+		return "booklist";
 		
     }
 }
