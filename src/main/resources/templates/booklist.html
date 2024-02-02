@@ -1,15 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Welcome</title>
+	<title>Booklist</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 
  <h1>
-        <p>Welcome to book store!</p>
+        Welcome to book store!
+        
         </h1>
-    <tr> th:each="Book : ${Books}">
+        
+<table>
+<tbody>
+    <tr> th:each= "Book : ${Books}">
         <td th:text="${Book.title}"></td>
         <td th:text="${Book.author}"></td>
         <td th:text="${Book.isbn}"></td>
@@ -17,7 +21,7 @@
     </tr>
 
 	
-	
-
+	</tbody>
+</table>
 </body>
 </html>
